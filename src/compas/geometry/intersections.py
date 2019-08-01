@@ -158,7 +158,7 @@ def intersection_segment_segment(ab, cd, tol=1e-6):
         XYZ coordinates of intersection point if one exists.
 
     """
-    x = intersection_line_line(ab, cd, tol=tol)
+    x = intersection_line_line(ab, cd, tol=tol)[0]
 
     if not x:
         return None
